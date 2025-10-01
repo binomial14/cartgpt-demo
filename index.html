@@ -6,7 +6,7 @@
   
   <!-- Primary Meta Tags -->
   <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="SoundNarratives: Rich Auditory Scene Descriptions to Support Deaf and Hard of Hearing People - Liang-Yuan Wu and Dhruv Jain">
+  <meta name="title" content="CARTGPT: Real-Time Correction of CART Captions Using Large Language Models - Liang-Yuan Wu et al.">
   <!-- TODO: Write a compelling 150-160 character description of your research -->
   <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
   <!-- TODO: Add 5-10 relevant keywords for your research area -->
@@ -14,7 +14,7 @@
 hard of hearing, generative AI, prompt engineering, auditory scene
 analysis">
   <!-- TODO: List all authors -->
-  <meta name="author" content="Liang-Yuan Wu, Dhruv Jain">
+  <meta name="author" content="Liang-Yuan Wu, Andrea Kleiver, Dhruv Jain">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
   
@@ -23,7 +23,7 @@ analysis">
   <!-- TODO: Replace with your institution or lab name -->
   <meta property="og:site_name" content="Soundability Lab">
   <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="SoundNarratives: Rich Auditory Scene Descriptions to Support Deaf and Hard of Hearing People">
+  <meta property="og:title" content="CARTGPT: Real-Time Correction of CART Captions Using Large Language Models">
   <!-- TODO: Same as description above -->
   <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
   <!-- TODO: Replace with your actual website URL -->
@@ -76,11 +76,11 @@ analysis">
 
 
   <!-- TODO: Replace with your paper title and authors -->
-  <title>SoundNarratives: Rich Auditory Scene Descriptions to Support Deaf and Hard of Hearing People - Liang-Yuan Wu and Dhruv Jain</title>
+  <title>CARTGPT: Real-Time Correction of CART Captions Using Large Language Models</title>
   
   <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/x-icon" href="static/images/soundnarratives.ico">
-  <link rel="apple-touch-icon" href="static/images/soundnarratives.ico">
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.png">
+  <link rel="apple-touch-icon" href="static/images/favicon.png">
   
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
@@ -238,13 +238,18 @@ analysis">
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">SoundNarratives: Rich Auditory Scene Descriptions to Support Deaf and Hard of Hearing People</h1>
+            <h1 class="title is-1 publication-title">CARTGPT: Real-Time Correction of CART Captions Using Large Language Models</h1>
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
-                <a href="https://binomial14.github.io" target="_blank">Liang-Yuan Wu</a>,</span>
-                <span class="author-block">
-                  <a href="https://web.eecs.umich.edu/~profdj/" target="_blank">Dhruv Jain</a></span>
+                <a href="https://binomial14.github.io" target="_blank">Liang-Yuan Wu</a>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/andrea-kleiver-cbc-44ab1023/" target="_blank">Andrea Kleiver</a>,
+              </span>
+              <span class="author-block">
+                <a href="https://web.eecs.umich.edu/~profdj/" target="_blank">Dhruv Jain</a>
+              </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
@@ -280,7 +285,7 @@ analysis">
 
                   <!-- TODO: Replace with your GitHub repository URL -->
                   <span class="link-block">
-                    <a href="https://github.com/SoundabilityLab/SoundNarratives.git" target="_blank"
+                    <a href="https://github.com/SoundabilityLab/CARTGPT" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -318,9 +323,9 @@ analysis">
         <!-- <source src="static/videos/banner_video.mp4" type="video/mp4"> -->
       <!-- </video> -->
       <!-- TODO: Replace with your video description -->
-      <img src="static/images/SoundNarratives_decorative_figure.png" alt="Teaser figure" loading="lazy"/>
+      <img src="static/images/cartgpt.png" alt="Teaser figure" loading="lazy"/>
       <h2 class="subtitle has-text-centered">
-        SoundNarratives delivers semantically rich auditory scene descriptions to enhance sound awareness for deaf and hard of hearing individuals. Unlike existing approaches that only provide sound event labels (dotted-line box), our system offers more detailed descriptions across multiple sound parameters (solid-line box), enabling users to better engage with their surroundings.
+       Our CARTGPT system takes in the CART transcript and the ASR transcript as input and produces the corrected CART transcript. The corrected words are highlighted in bold.
       </h2>
     </div>
   </div>
@@ -336,7 +341,7 @@ analysis">
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Sound recognition enhances safety, social interaction, and situational awareness for deaf and hard of hearing (DHH) individuals. However, existing sound recognition technologies primarily classify sounds into predefined categories (e.g., door opening, speech), which fail to capture the full complexity of real-world auditory scenes (e.g., temporal variations, sound transitions, overlapping sound layers). In this work, we introduce SoundNarratives, a real-time system that generates rich, contextual auditory scene descriptions tailored to DHH users. We began with conducting a formative study with 10 DHH participants to identify nine key auditory scene parameters (e.g., sound class, loudness, emotion, semantic description), and used these insights to guide prompt engineering with a state-of-the-art audio language model. A user study with 10 DHH participants demonstrated a significant preference for SoundNarratives over a baseline model, along with a potential for improved confidence and situational awareness.
+            Communication Access Realtime Translation (CART) is a widely used captioning technology among deaf and hard of hearing (DHH) individuals, valued for its high accuracy and ability to convey speaker cues and contextual sounds in real time. However, CART performance can degrade in challenging conditions such as background noise, technical jargon, or rapid speech—reducing caption quality and impacting comprehension. We introduce CARTGPT, a real-time captioning system that enhances CART transcripts by leveraging large language models (LLMs) and automatic speech recognition (ASR) input to detect and correct transcription errors. To inform the design of CARTGPT, we conducted a formative study with 10 professional CART captioners to identify common sources of error and their perspectives on using AI for caption correction. We evaluated CARTGPT on a 39.7-hour speech dataset spanning medical, technical, and conversational domains, observing a 5.6% improvement in word accuracy over standard CART and 17.3% over a state-of-the-art ASR model. In a user study with 16 DHH participants, CARTGPT captions were rated as significantly more comprehensible, particularly in technical scenarios, while maintaining real-time responsiveness. These findings demonstrate the potential of LLM-assisted captioning to improve accessibility and comprehension for DHH users in real-world settings.
           </p>
         </div>
       </div>
